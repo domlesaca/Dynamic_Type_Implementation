@@ -4,7 +4,7 @@ using DynamicTesting;
 namespace Dynamic_Type_Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class Dynamic_Unit_Tests
     {
         [TestMethod]
         public void PlusOperationTestString()
