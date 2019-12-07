@@ -508,6 +508,16 @@ namespace Dynamic_Type_Tests
         }
 
         [TestMethod]
+        public void ArrayModifyAtIndexTest()
+        {
+            DynamicType temp = new int[] { 6, 10 };
+            Assert.AreEqual(10, (int)temp[1]);
+            temp[1] = 11;
+            Assert.AreEqual(11, (int)temp[1]);
+
+        }
+
+        [TestMethod]
         public void ObjectInstantiateTest()
         {
             DynamicType obj = new DynamicType(new woop("hello"));
